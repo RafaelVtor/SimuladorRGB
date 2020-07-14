@@ -8,26 +8,24 @@ function start() {
 
     rangerRed.focus()
 
-
     rangerRed.addEventListener('change', eventChangeRanger)
     rangerGreen.addEventListener('change', eventChangeRanger)
     rangerBlue.addEventListener('change', eventChangeRanger)
 
     function eventChangeRanger() {
 
-        function changeRanger() {
-            var inputRed = document.querySelector('#redText')
-            var inputGreen = document.querySelector('#greenText')
-            var inputBlue = document.querySelector('#blueText')
+        var inputRed = document.querySelector('#redText')
+        var inputGreen = document.querySelector('#greenText')
+        var inputBlue = document.querySelector('#blueText')
 
-            inputRed.value = rangerRed.value
-            inputGreen.value = rangerGreen.value
-            inputBlue.value = rangerBlue.value
-        }
-        changeRanger()
+        inputRed.value = rangerRed.value
+        inputGreen.value = rangerGreen.value
+        inputBlue.value = rangerBlue.value
+
         eventChangeColor(rangerRed.value, rangerGreen.value, rangerBlue.value)
     }
     function eventChangeColor(red, green, blue) {
+
         var color = document.querySelector('.color')
         color.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`
 
