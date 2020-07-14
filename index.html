@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Simulador RGB</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+      <ul>
+        <li>
+          <p>(R) Vermelho</p>
+          <input class="input" type="range" name="red" id="red" value="0" max="255" />
+          <input type="text" name="redText" id="redText" placeholder="0" disabled />
+        </li>
+        <li>
+          <p>(G) Verde</p>
+          <input class="input" type="range" name="green" id="green" value="0" max="255" />
+          <input type="text" name="greenText" id="greenText" placeholder="0" disabled />
+        </li>
+        <li>
+          <p>(B) Azul</p>
+          <input class="input" type="range" name="blue" id="blue" value="0" max="255" />
+          <input type="text" name="blueText" id="blueText" placeholder="0" disabled />
+        </li>
+      </ul>
+    </div>
+    <div class="color"></div>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
