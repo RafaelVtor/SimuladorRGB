@@ -8,9 +8,9 @@ function start() {
 
     rangerRed.focus()
 
-    rangerRed.addEventListener('change', eventChangeRanger)
-    rangerGreen.addEventListener('change', eventChangeRanger)
-    rangerBlue.addEventListener('change', eventChangeRanger)
+    rangerRed.addEventListener('input', eventChangeRanger)
+    rangerGreen.addEventListener('input', eventChangeRanger)
+    rangerBlue.addEventListener('input', eventChangeRanger)
 
     function eventChangeRanger() {
 
